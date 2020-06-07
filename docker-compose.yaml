@@ -1,0 +1,10 @@
+# Copyright (c) Elliot Peele <elliot@bentlogic.net>
+
+version: '3.3'
+services:
+  cupsd:
+    restart: always
+    ports:
+      - "631:631/tcp"
+    image: elliotpeele/cupsd
+    priviledged: true
