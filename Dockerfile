@@ -37,4 +37,7 @@ RUN cp /etc/cups/cups-files.conf /etc/cups/cups-files.conf.orig \
 # Disable requirement for TLS
 RUN sed -i '/^DefaultAuthType.*/i DefaultEncryption IfRequested' /etc/cups/cupsd.conf
 
+# Make backup of configuration directory to populate potential volume
+RUN cp -rf /etc/cups /etc/cups.orig
+
 CMD ["/start.sh"]

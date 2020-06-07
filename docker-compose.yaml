@@ -7,4 +7,6 @@ services:
     ports:
       - "631:631/tcp"
     image: elliotpeele/cupsd
-    priviledged: true
+    privileged: true
+    volumes:
+      - ./config:/etc/cups
