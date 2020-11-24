@@ -1,4 +1,4 @@
-# Copyright (c) Elliot Peele <elliot@bentlogic.net
+# Copyright (c) Elliot Peele <elliot@bentlogic.net>
 
 # Cups Daemon Container Image
 FROM fedora:32
